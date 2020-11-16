@@ -30,7 +30,10 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon
+        aria-label="menu-button"
+        @click.stop="drawer = !drawer"
+      />
       <nuxt-link to="/"
         ><v-toolbar-title class="appTitle" v-text="title"
       /></nuxt-link>
