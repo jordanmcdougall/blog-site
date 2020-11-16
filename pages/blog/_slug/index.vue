@@ -9,7 +9,7 @@
 export default {
   async asyncData({ $content, params }) {
     try {
-      const article = await $content('/', params.slug).fetch()
+      const article = await $content(params.slug).fetch()
 
       return {
         article,
