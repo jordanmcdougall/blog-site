@@ -23,7 +23,7 @@
         </v-list-item>
         <v-list-item>
           <v-list-item-subtitle>Change the site theme</v-list-item-subtitle>
-          <v-btn block @click="toggleTheme()">
+          <v-btn aria-label="change-app-theme" block @click="toggleTheme()">
             <v-icon>{{ themeIcon }}</v-icon></v-btn
           >
         </v-list-item>
